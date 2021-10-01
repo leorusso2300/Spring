@@ -1,4 +1,4 @@
-package com.generation.lojaGames.controller;
+package com.generation.farmacia.controller;
 
 import java.util.List;
 
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.generation.lojaGames.model.Categoria;
-import com.generation.lojaGames.repository.CategoriaRepository;
+import com.generation.farmacia.model.Categoria;
+import com.generation.farmacia.repository.CategoriaRepository;
 
 @RestController
 @RequestMapping("/categoria")
@@ -58,5 +58,4 @@ public class CategoriaController {
 	public void delete(@PathVariable long id) {
 		repository.deleteById(id);
 	}
-
 }
